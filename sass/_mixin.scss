@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+// float 解除
+@mixin clear {
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+      @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+      @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+      @content;
+  }
+}
