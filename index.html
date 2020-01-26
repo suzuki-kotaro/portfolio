@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+  <title>suzuki_kotaro_portfolio</title>
+  <meta name="description" content="この中に説明文を入れます" />
+
+  <meta property="og:title" content="ページのタイトル" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="ページの簡単な説明" />
+  <meta property="og:url" content="ページのURL" />
+  <meta property="og:site_name" content="サイトのタイトル" />
+  <meta property="og:image" content="サムネイル画像のURL" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+  <!--font-awesome-->
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- google.fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400|Noto+Sans+JP&display=swap" rel="stylesheet">
+  <!-- adobefonts -->
+  <script>
+    (function (d) {
+      var config = {
+          kitId: 'dcz1pwb',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <!-- ここにトラッキングコードを記載する -->
+  <!-- ここにトラッキングコードを記載する -->
+  <!-- ここにトラッキングコードを記載する -->
+  <!-- ここにトラッキングコードを記載する -->
+  <!-- ここにトラッキングコードを記載する -->
+</head>
+
+<body class="main-container">
+
+  <div class="drawer drawer--left">
+    <header role="banner">
+      <!-- ハンバーガーボタン -->
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <!-- ナビゲーションの中身 -->
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-menu-item" href="#profile">Profile</a></li>
+          <li><a class="drawer-menu-item" href="#work">Work</a></li>
+          <li><a class="drawer-menu-item" href="#hisory">History</a></li>
+          <li><a class="drawer-menu-item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <main role="main">
+    <header class="left">
+      <div class="left-inner">
+        <h1 class="logo"><img src="./images/logo.png" alt=""><a href="#"></a></h1>
+        <nav class="side-nav">
+          <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav><!-- /.header-nav -->
+        <ul class="sns-icon">
+          <li><a href="#https://twitter.com/kotaro_tareme"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </header>
+  </main>
+
+
+
+  <main class="right">
+    <section class="hero">
+      <h2 class="hero__catch"><span>SUZUKI</span><br>KOTARO</h2>
+      <figure class="hero__backimage"><img src="./images/photo01.jpg" alt=""></figure>
+    </section>
+
+    <section id="profile" class="profile section-margin">
+      <div class="dammy-box"></div>
+      <h2 class="section-title">Profile</h2>
+      <div class="profile__container">
+        <div class="profile__container__left">
+          <p class="profile__container__left-subtit">nouka / desiner</p>
+          <h2>鈴木 小太郎</h2>
+          <p class="profile__container__left-txt">簡易的な自己紹介ぶんを書きます大体２行くらい簡易的な自己紹介ぶんを書きます大体２行くらい簡易的な自己紹介ぶんを書きます大体２行くらい
+          </p>
+        </div>
+        <div class="profile__container__right swiper-container">
+          <ul class="profile__image swiper-wrapper">
+            <li class="profile__image__list swiper-slide"><img src="./images/photo02.jpg" alt=""></li>
+            <li class="profile__image__list swiper-slide"><img src="./images/photo02.jpg" alt=""></li>
+            <li class="profile__image__list swiper-slide"><img src="./images/photo02.jpg" alt=""></li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+      <div class="profile__skill">
+
+        <ul class="profile__skill__list">
+          <li class="profile__skill__list__head">Design</li>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+        </ul>
+        <ul class="profile__skill__list">
+          <li class="profile__skill__list__head">Movie</li>
+          <li>AfterEffects</li>
+          <li>premiere Pro</li>
+          <li>Vegas Pro</li>
+          <li>Blender</li>
+        </ul>
+        <ul class="profile__skill__list">
+          <li class="profile__skill__list__head">Web</li>
+          <li>HTML</li>
+          <li>CSS/Sass</li>
+          <li>jquery</li>
+          <li>PHP</li>
+          <li>CMS/wordpress</li>
+        </ul>
+      </div>
+    </section>
+    <section id="work" class="work section-margin">
+      <h2 class="section-title">Work</h2>
+      <ul class="work__list">
+        <li class="work__list__article card">
+          <a href="">
+            <p class="card__img"><img src="./images/photo01.jpg" alt=""></p>
+            <dl>
+              <dt class="card__tit">画像のタイトル画像のタイトル画像のタイトル</dt>
+              <dd class="card__txt">画像の説明文画像の説明文画像の説明文画像の説明文</dd>
+            </dl>
+          </a></li>
+        <li class="work__list__article card">
+          <a href="">
+            <p class="card__img"><img src="./images/photo01.jpg" alt=""></p>
+            <dl>
+              <dt class="card__tit">画像のタイトル画像のタイトル画像のタイトル</dt>
+              <dd class="card__txt">画像の説明文画像の説明文画像の説明文画像の説明文</dd>
+            </dl>
+          </a></li>
+        <li class="work__list__article card">
+          <a href="">
+            <p class="card__img"><img src="./images/photo01.jpg" alt=""></p>
+            <dl>
+              <dt class="card__tit">画像のタイトル画像のタイトル画像のタイトル</dt>
+              <dd class="card__txt">画像の説明文画像の説明文画像の説明文画像の説明文</dd>
+            </dl>
+          </a></li>
+        <li class="work__list__article card">
+          <a href="">
+            <p class="card__img"><img src="./images/photo01.jpg" alt=""></p>
+            <dl>
+              <dt class="card__tit">画像のタイトル画像のタイトル画像のタイトル</dt>
+              <dd class="card__txt">画像の説明文画像の説明文画像の説明文画像の説明文</dd>
+            </dl>
+          </a></li>
+        <li class="work__list__article card">
+          <a href="">
+            <p class="card__img"><img src="./images/photo01.jpg" alt=""></p>
+            <dl>
+              <dt class="card__tit">画像のタイトル画像のタイトル画像のタイトル</dt>
+              <dd class="card__txt">画像の説明文画像の説明文画像の説明文画像の説明文</dd>
+            </dl>
+          </a></li>
+        <li class="work__list__article card">
+          <a href="">
+            <p class="card__img"><img src="./images/photo01.jpg" alt=""></p>
+            <dl>
+              <dt class="card__tit">画像のタイトル画像のタイトル画像のタイトル</dt>
+              <dd class="card__txt">画像の説明文画像の説明文画像の説明文画像の説明文</dd>
+            </dl>
+          </a></li>
+      </ul>
+    </section>
+
+    <section id="history" class="history section-margin">
+      <h2 class="section-title">History</h2>
+      <div class="history__txtbox">
+        <p>自分はこんな事にこだわっている自分はこんな事にこだわっている自分はこんな事にこだわっている</p>
+        <p>今後はこうなっていきたい、目指す場所どういった仕事をしたいのかできるのか</p>
+      </div>
+
+      <!-- 経歴をテーブルタグなどで表現する予定 -->
+      <div class="timeline">
+        <h2>職務経歴</h2>
+        <ul id="timeline">
+          <li class="work">
+            <input class="radio" id="work5" name="works" type="radio" checked>
+            <div class="relative">
+              <label for="work5">●○会社入社</label>
+              <span class="date">12 May 2013</span>
+              <span class="circle"></span>
+            </div>
+            <div class="content">
+              <p>
+                こんなことをしてきましたこんなことをしてきましたこんなことをしてきましたこんなことをしてきました
+                こんなことをしてきましたこんなことをしてきましたこんなことをしてきましたこんなことをしてきました
+                こんなことをしてきました
+              </p>
+            </div>
+          </li>
+          <li class="work">
+            <input class="radio" id="work4" name="works" type="radio">
+            <div class="relative">
+              <label for="work4">●○会社入社</label>
+              <span class="date">11 May 2013</span>
+              <span class="circle"></span>
+            </div>
+            <div class="content">
+              <p>
+                こんなことをしてきましたこんなことをしてきましたこんなことをしてきましたこんなことをしてきました
+                こんなことをしてきましたこんなことをしてきましたこんなことをしてきましたこんなことをしてきました
+                こんなことをしてきました
+              </p>
+            </div>
+          </li>
+          <li class="work">
+            <input class="radio" id="work3" name="works" type="radio">
+            <div class="relative">
+              <label for="work3">●○会社入社</label>
+              <span class="date">10 May 2013</span>
+              <span class="circle"></span>
+            </div>
+            <div class="content">
+              <p>
+                こんなことをしてきましたこんなことをしてきましたこんなことをしてきましたこんなことをしてきました
+                こんなことをしてきましたこんなことをしてきましたこんなことをしてきましたこんなことをしてきました
+                こんなことをしてきました
+              </p>
+            </div>
+          </li>
+          <li class="work">
+            <input class="radio" id="work2" name="works" type="radio">
+            <div class="relative">
+              <label for="work2">●○会社入社</label>
+              <span class="date">09 May 2013</span>
+              <span class="circle"></span>
+            </div>
+            <div class="content">
+              <p>
+                こんなことをしてきましたこんなことをしてきましたこんなことをしてきましたこんなことをしてきました
+                こんなことをしてきましたこんなことをしてきましたこんなことをしてきましたこんなことをしてきました
+                こんなことをしてきました
+              </p>
+            </div>
+          </li>
+          <li class="work">
+            <input class="radio" id="work1" name="works" type="radio">
+            <div class="relative">
+              <label for="work1">●○会社入社</label>
+              <span class="date">08 May 2013</span>
+              <span class="circle"></span>
+            </div>
+            <div class="content">
+              <p>
+                こんなことをしてきましたこんなことをしてきましたこんなことをしてきましたこんなことをしてきました
+                こんなことをしてきましたこんなことをしてきましたこんなことをしてきましたこんなことをしてきました
+                こんなことをしてきました
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact section-margin">
+      <h2 class="section-title">Contact</h2>
+      <ul class="contact__sns-icon">
+        <li><a href="#https://twitter.com/kotaro_tareme"><i class="fab fa-twitter fa-3x"></i></a></li>
+      </ul>
+      <!-- <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfQQbc9KRT3uvlfcTTVCdKbvWdIKNRBsNVNbT2dqxsattTh1w/viewform?embedded=true"
+        width="100%" height="677" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe> -->
+    </section>
+  </main>
+</body>
+
+
+<!-- jquery関係はここに書き込むかJSファイルを作成する -->
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    speed: 3000,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+
+  });
+</script>
+
+<!-- ドロワーメニューの利用宣言 -->
+<script>
+  $(document).ready(function () {
+    $('.drawer').drawer();
+  });
+</script>
+<!-- ドロワーメニューのリンククリックで閉じる -->
+<script>
+  $(document).ready(function () {
+    $('.drawer').drawer();
+    $('.drawer-menu-item').on('click', function () {
+      $('.drawer').drawer('close');
+    });
+  });
+</script>
+
+</html>
