@@ -184,10 +184,18 @@ profile
 ------------------------------------------------------- */
 .profile {
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 80px;
+  padding: 50px 100px;
 
-  & .section-title {
-    padding-left: 50px;
+  @include sp {
+    padding: 0;
+
+  }
+
+  @include sp {
+    & .section-title {
+      padding-left: 50px;
+    }
   }
 
   &__container {
@@ -254,7 +262,7 @@ profile
       }
 
       @include sp {
-      font-size: 1.2vw;
+        font-size: 1.2vw;
       }
     }
 
