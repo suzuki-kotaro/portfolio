@@ -621,9 +621,14 @@ profile
 ------------------------------------------------------- */
 .profile {
   position: relative;
-  margin-bottom: 10%; }
-  .profile .section-title {
-    padding-left: 50px; }
+  margin-bottom: 80px;
+  padding: 50px 100px; }
+  @media (max-width: 640px) {
+    .profile {
+      padding: 0; } }
+  @media (max-width: 640px) {
+    .profile .section-title {
+      padding-left: 50px; } }
   .profile__container {
     display: -webkit-box;
     display: -ms-flexbox;
